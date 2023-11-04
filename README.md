@@ -2,7 +2,7 @@
 
 # 11/4/2023
 
-Our team leader dropped the class abruptly. I've been holding off migrating the repo for awhile, but I think it's necessary. Just in case they decide to delete the repo from their page.
+Our team leader dropped the class abruptly months ago. I've been holding off migrating the repo for awhile, but I think it's necessary. Just in case they decide to delete the repo from their page.
 
 # 11/3/2023
 
