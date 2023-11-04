@@ -1,5 +1,9 @@
 # ChristmasFlair
 
+# 11/4/2023
+
+Our team leader dropped the class abruptly. I've been holding off migrating the repo for awhile, but I think it's necessary. Just in case they decide to delete the repo from their page.
+
 # 11/3/2023
 
 I just yesterday realized that the webapp is meant to run through the Pi, not the PC. Oops. 
