@@ -4,6 +4,19 @@
 
 Our team leader dropped the class abruptly months ago. I've been holding off migrating the repo for awhile, but I think it's necessary. Just in case they decide to delete the repo from their page.
 
+
+New discovery: I looked in my generated WAR file and nothing is in classes! That might explain why nothing works on the Pi.
+![img4.png](README_featureChris_log%2Fimg4.png)
+
+[SOLUTION] 1. run war:inplace to generate a webapp folder in source WAR directory.
+![img5.png](README_featureChris_log%2Fimg5.png)
+2. run war:war to generate WAR file.
+![img_3.png](README_featureChris_log%2Fimg_3.png)
+3. Confirm the WAR file is built correctly (7-Zip or equivalent).
+![img_4.png](README_featureChris_log%2Fimg_4.png)
+
+
+
 # 11/3/2023
 
 I just yesterday realized that the webapp is meant to run through the Pi, not the PC. Oops. 
