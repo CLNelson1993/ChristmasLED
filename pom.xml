@@ -32,11 +32,6 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
-		</dependency>
 		<!-- For some reason diozero-ws281x-java:1.3.5 will not download properly. Everything fixes when I use the previous version (1.3.4). I am deep in the spaghetti and may God have mercy on my soul. -->
 		<dependency>
 			<groupId>com.diozero</groupId>
@@ -50,7 +45,6 @@
 			<version>2.4.2</version>
 		</dependency>
 	</dependencies>
-
 	<build>
 		<plugins>
 			<plugin>
