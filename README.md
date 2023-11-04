@@ -1,12 +1,16 @@
 # ChristmasFlair
 
+# 11/4/2023
+
+Our team leader dropped the class abruptly months ago. I've been holding off migrating the repo for awhile, but I think it's necessary. Just in case they decide to delete the repo from their page.
+
 # 11/3/2023
 
 I just yesterday realized that the webapp is meant to run through the Pi, not the PC. Oops. 
 
 
 Accessing server on Pi via 127.0.0.1:8080
-![img_1.png](img.png)
+![img_1.png](README_featureChris_log%2Fimg.png)
 
 Accessing server on PC via 192.168.x.x:8080
 ![img_2.png](README_featureChris_log%2Fimg_2.png)
