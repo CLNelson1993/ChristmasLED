@@ -6,7 +6,7 @@ I just yesterday realized that the webapp is meant to run through the Pi, not th
 
 
 Accessing server on Pi via 127.0.0.1:8080
-![img_1.png](img.png)
+![img_1.png](README_featureChris_log%2Fimg.png)
 
 Accessing server on PC via 192.168.x.x:8080
 ![img_2.png](README_featureChris_log%2Fimg_2.png)
