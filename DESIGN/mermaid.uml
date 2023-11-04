@@ -1,0 +1,96 @@
+classDiagram
+    CMDClose ..|> Command : implements
+    CMDClose --> Receiver
+    CMDRainbow ..|> Command : implements
+    CMDRainbow --> Receiver
+    CMDRainbowCycle ..|> Command : implements
+    CMDRainbowCycle --> Receiver
+    CMDStatic ..|> Command : implements
+    CMDStatic --> Receiver
+    CMDStrobe ..|> Command : implements
+    CMDStrobe --> Receiver
+    CMDWipe ..|> Command : implements
+    CMDWipe --> Receiver
+
+    Invoker --> Command
+    Client --> Receiver
+    Client --> CMDRainbow
+    Client --> CMDRainbowCycle
+    Client --> CMDStatic
+    Client --> CMDStrobe
+    Client --> CMDWipe
+    Client --> CMDClose
+
+    class Command{
+        <<interface>>
+        +execute() : void
+    }
+
+
+    class CMDClose{
+        -Receiver receiver
+        +CMDClose(Receiver receiver)
+        +execute(): void "receiver.cmdClose()"
+    }
+    class CMDRainbow{
+        -Receiver receiver
+        +CMDRainbow(Receiver receiver)
+        +execute(): void "receiver.cmdRainbow()"
+    }
+    class CMDRainbowCycle{
+        -Receiver receiver
+        +CMDRainbowCycle(Receiver receiver)
+        +execute(): void "receiver.cmdRainbowCycle()"
+    }
+    class CMDStatic{
+        -Receiver receiver
+        +CMDStatic(Receiver receiver)
+        +execute(): void "receiver.cmdStatic()"
+    }
+    class CMDWipe{
+        -Receiver receiver
+        +CMDWipe(Receiver receiver)
+        +execute(): void "receiver.cmdWipe()"
+    }
+    class CMDStrobe{
+        -Receiver receiver
+        +CMDStrobe(Receiver receiver)
+        +execute(): void "receiver.cmdStrobe()"
+    }
+
+    class Receiver {
+        LedDriverInterface ledDriver
+        +cmdClose()
+        +cmdRainbow()
+        +cmdStatic()
+        +cmdWipe()
+        +cmdRainbowCycle()
+        +cmdStrobe()
+    }
+    class Invoker {
+        +Command command
+        +Invoker(Command c)
+        +execute()
+    }
+    class Client{
+        +Receiver receiver
+        +Command cmdClose
+        +Invoker closeInvoker
+        +Command cmdRainbow
+        +Invoker rainbowInvoker
+        +Command cmdStatic
+        +Invoker staticInvoker
+        +Command cmdWipe
+        +Invoker wipeInvoker
+        +Command cmdRainbowCycle
+        +Invoker rainbowCycleInvoker
+        +Command cmdStrobe
+        +Invoker strobeInvoker
+        +Scanner scanner
+        +staticInvoker.execute()
+        +rainbowInvoker.execute()
+        +wipeInvoker.execute()
+        +rainbowCycleInvoker.execute()
+        +strobeInvoker.execute()
+        +closeInvoker.execute()
+    }
