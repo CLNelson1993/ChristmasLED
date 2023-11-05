@@ -2,18 +2,19 @@
 
 # 11/4/2023
 
-Our team leader dropped the class abruptly months ago. I've been holding off migrating the repo for awhile, but I think it's necessary. Just in case they decide to delete the repo from their page.
+WEB APP SUCCESSFULLY RUNNING ON RASPBERRY PI!
 
+[SOLUTION] 
+1. The ENTIRE project gets transfered the Pi. Not a single WAR file. Not a single compiled JAR. All of it. pom.xml(maven) will do all of the necessary legwork of setting up dependencies, compiling, and running Tomcat with a single cmd line.
+2. Maven installed via ```sudo apt-get install maven```
+3. ```cd``` to project folder (in this case, ```cd /home/st6/ChristmasLED/```)
+4. Type ```mvn spring-boot:run```
+5. If you see this...
+![img_6.png](README_featureChris_log%2Fimg_6.png)
+...It should be working!
+6. go to ```{ipAddress}:8080/``` to confirm.
+![img_5.png](README_featureChris_log%2Fimg_5.png)
 
-New discovery: I looked in my generated WAR file and nothing is in classes! That might explain why nothing works on the Pi.
-![img4.png](README_featureChris_log%2Fimg4.png)
-
-[SOLUTION] 1. run war:inplace to generate a webapp folder in source WAR directory.
-![img5.png](README_featureChris_log%2Fimg5.png)
-2. run war:war to generate WAR file.
-![img_3.png](README_featureChris_log%2Fimg_3.png)
-3. Confirm the WAR file is built correctly (7-Zip or equivalent).
-![img_4.png](README_featureChris_log%2Fimg_4.png)
 
 
 
