@@ -2,7 +2,7 @@
 
 # 11/4/2023
 
-WEB APP SUCCESSFULLY RUNNING ON RASPBERRY PI!
+WEB APP SUCCESSFULLY RUNNING ON RASPBERRY PI! The learning process took days, but it was worth it!
 
 [SOLUTION] 
 1. The ENTIRE project gets transfered the Pi. Not a single WAR file. Not a single compiled JAR. All of it. pom.xml(maven) will do all of the necessary legwork of setting up dependencies, compiling, and running Tomcat with a single cmd line.
