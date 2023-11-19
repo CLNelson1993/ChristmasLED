@@ -2,17 +2,22 @@
 
 # 11/18/2023 (Sprint 5)
  
+Tested and works on Raspberry Pi!
+
 For this sprint I focused primarily on getting index.html and ChristmasLEDController.java to work together. As of now I have managed to make an on and off button that tells you via notification if the command was successful. In the very near future I hope to have an index page that gives the user way more buttons that execute different animations as well as a way to adjust brightness & color in certain cases. 
 
 HTML built using Boot Strap. Boot Strap is great because it makes web pages look nice on all devices. 
 
 WHAT I CURRENTLY HAVE:
-![img.png](img.png)
+![img_7.png](README_featureChris_log%2Fimg_7.png)
 
 WHAT I WANT TO MAKE BASED OFF OF IT:
-![img_1.png](DESIGN%2Fimg_1.png)
+![img_8.png](README_featureChris_log%2Fimg_8.png)
 
 Based on the above image, it may be necessary to re-evaluate my Command Design Pattern and make a State Design Pattern based off of it. 
+
+Web PAGE:
+![img_9.png](README_featureChris_log%2Fimg_9.png)
 
 # 11/4/2023
 
