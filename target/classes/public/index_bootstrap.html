@@ -1,0 +1,78 @@
+THIS IS THE OLD HTML THAT DID NOT USE BOOTSTRAP.
+KEEPING THIS HERE IN CASE MY BOOTSTRAP HTML SUCKS.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChristmasLED Index</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+<button id="onButton">Turn ON</button>
+<button id="offButton">Turn OFF</button>
+
+<script>
+    $(document).ready(function(){
+        $("#onButton").click(function(){
+            $.get("/on", function(data, status){
+                alert(data);
+            });
+        });
+
+        $("#offButton").click(function(){
+            $.get("/off", function(data, status){
+                alert(data);
+            });
+        });
+    });
+</script>
+
+
+
+<h1>Spring Boot ChristmasLED</h1>
+
+<input type="text" id="varBox" placeholder="Enter a variable!">
+<button onclick="redirectToUrl()">Input Variable</button>
+
+<script>
+    function redirectToUrl() {
+        var userVar = document.getElementById('varBox').value;
+        window.location.href = '/test/' + userVar;
+    }
+</script>
+<div style="margin-top: 1500px;">
+
+
+
+    <h2>HTML sandbox</h2>
+    <br>
+
+    <p>WS281X LED STRIP</p>
+    <img height="240" src="img.png" alt="oh god how did this get here i am not good with computer">
+    <p>BOTTOM TEXT</p>
+    <br>
+
+    <p><span style="color: blue;">Graphics</span>
+        <span style="color: green;">design</span>
+        <span style="color: pink;">is</span>
+        <span style="color: yellow;">my</span>
+        <span style="color: red;">passion!!1!</span></p>
+    <p>this page was made for educational purposes fr fr ong</p>
+
+    <video width="320" height="240" controls loop autoplay muted>
+        <source src="amogus.webm" type="video/webm">
+        bro vented
+    </video>
+
+</div>
+
+</body>
+</html>

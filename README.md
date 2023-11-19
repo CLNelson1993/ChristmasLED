@@ -1,5 +1,15 @@
 # ChristmasFlair
 
+# 11/18/2023 (Sprint 5)
+
+For this sprint I focused primarily on getting index.html and ChristmasLEDController.java to work together. As of now I have managed to make an on and off button that tells you via notification if the command was successful. In the very near future I hope to have an index page that gives the user way more buttons that execute different animations as well as a way to adjust brightness & color in certain cases. 
+
+WHAT I CURRENTLY HAVE:
+![img.png](img.png)
+
+WHAT I WANT TO MAKE BASED OFF OF IT:
+![img_1.png](DESIGN%2Fimg_1.png)
+Based on the above image, it may be necessary to re-evaluate my Command Design Pattern and make a State Design Pattern based off of it. 
 # 11/4/2023
 
 WEB APP SUCCESSFULLY RUNNING ON RASPBERRY PI! The learning process took days, but it was worth it!
