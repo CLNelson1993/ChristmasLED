@@ -11,7 +11,9 @@ WHAT I CURRENTLY HAVE:
 
 WHAT I WANT TO MAKE BASED OFF OF IT:
 ![img_1.png](DESIGN%2Fimg_1.png)
+
 Based on the above image, it may be necessary to re-evaluate my Command Design Pattern and make a State Design Pattern based off of it. 
+
 # 11/4/2023
 
 WEB APP SUCCESSFULLY RUNNING ON RASPBERRY PI! The learning process took days, but it was worth it!
