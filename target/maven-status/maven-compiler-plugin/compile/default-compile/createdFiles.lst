@@ -1,3 +1,12 @@
 com\st6\ChristmasLED\ChristmasLEDController.class
+com\st6\ChristmasLED\Command\CMDRainbow.class
 com\st6\ChristmasLED\ChristmasLEDApplication.class
+com\st6\ChristmasLED\Command\CMDStrobe.class
+com\st6\ChristmasLED\Command\CMDStatic.class
+com\st6\ChristmasLED\Command\CMDWipe.class
+com\st6\ChristmasLED\Command\Command.class
+com\st6\ChristmasLED\Command\CMDClose.class
+com\st6\ChristmasLED\Command\Receiver.class
+com\st6\ChristmasLED\Command\CMDRainbowCycle.class
+com\st6\ChristmasLED\Command\Invoker.class
 com\st6\ChristmasLED\ServletInitializer.class
