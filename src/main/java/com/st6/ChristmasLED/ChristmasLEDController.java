@@ -39,8 +39,6 @@ public class ChristmasLEDController {
     //create invoker to pass the command
     Invoker strobeInvoker = new Invoker(cmdStrobe);
 
-    //Holy molly this is gonna get messy
-
 
 
 
