@@ -75,26 +75,29 @@
             <div id="content" class="text-center w-100" style="margin-top: 20px;"></div>
             <div id="buttons" class="text-center w-100" style="margin-top: 20px;">
                 <button id="btn-static" class="btn btn-primary mr-4">Static</button>
-                <button id="btn-strobe" class="btn btn-primary">Strobe</button>
+                <button id="btn-strobe" class="btn btn-primary mr-4">Strobe</button>
+                <button id="btn-wipe" class="btn btn-primary">Wipe</button>
             </div>
         </div>
     </div>
 </div>
 
-
-
 <script>
     $(document).ready(function(){
         $("#btn-static").click(function(){
-        // Send a GET request to "/static"
-        $.get("/static");
+            $.get("/cmdstatic");
         });
+
         $("#btn-strobe").click(function(){
-        // Send a GET request to "/strobe"
-        $.get("/strobe");
+            $.get("/strobe");
+        });
+
+        $("#btn-wipe").click(function(){
+            $.get("/wipe");
         });
     });
 </script>
+
 
 </body>
 

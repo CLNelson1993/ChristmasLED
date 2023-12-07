@@ -15,11 +15,6 @@ public class ChristmasLEDController {
     Receiver receiver = new Receiver();
 
     //create new command
-    Command cmdClose = new CMDClose(receiver);
-    //create invoker to pass the command
-    Invoker closeInvoker = new Invoker(cmdClose);
-
-    //create new command
     Command cmdRainbow = new CMDRainbow(receiver);
     //create invoker to pass the command
     Invoker rainbowInvoker = new Invoker(cmdRainbow);
@@ -62,11 +57,22 @@ public class ChristmasLEDController {
         rainbowCycleInvoker.execute();
         return "rainbowCycle";
     }
-    @RequestMapping("/off")
+    @RequestMapping("/wipe")
     @ResponseBody
-    public String off() {
-        //nice and clean one-liner
-        closeInvoker.execute();
-        return "LED off";
+    public String wipe() {
+        wipeInvoker.execute();
+        return "wipe";
+    }
+    @RequestMapping("/cmdstatic")
+    @ResponseBody
+    public String cmdstatic() {
+        staticInvoker.execute();
+        return "static";
+    }
+    @RequestMapping("/strobe")
+    @ResponseBody
+    public String strobe() {
+        strobeInvoker.execute();
+        return "strobe";
     }
 }
