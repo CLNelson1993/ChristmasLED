@@ -21,8 +21,6 @@ public class Receiver {
     public void cmdRainbow() {
         // Toggle the value of stripOn at the beginning of the method
         stripOn = !stripOn;
-        //set strip to default (in case brightness was changed using cmdStatic)
-        ledDriver = new WS281x(gpioNum, brightDefault, pixelNum);
         //create an array of colors using PixelColour
         int[] colors = PixelColour.RAINBOW;
 
@@ -43,8 +41,6 @@ public class Receiver {
             }
         } else {
             // If stripOn is false, turn off all the LEDs.
-            // I hate everything about this. You have to wait for the increment counter to go up before it finally turns off.
-            // It only takes like 10 seconds at most, but that's precious time that the average user wouldn't be happy with wasting.
             System.out.println("cmdRainbow() off");
             ledDriver.allOff();
         }
