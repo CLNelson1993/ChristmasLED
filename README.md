@@ -1,5 +1,9 @@
 # ChristmasFlair
 
+# 12/6/2023
+
+There is now a relatively decent GUI which uses 3 html pages. I wanted to make everything run in a single index page using Bootstrap's dark magic, but I'm not a high enough level to cast that. 
+
 # 11/18/2023 (Sprint 5)
  
 Tested and works on Raspberry Pi!

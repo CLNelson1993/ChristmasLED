@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>ChristmasLED Index</title>
+    <title>ChristmasLED Preset</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -22,8 +22,8 @@
 			font-size: 36px;
         }
 		.btn-off:active {
-			background-color: #D32F2F; 
-		}		
+			background-color: #D32F2F;
+		}
 		.navbar {
 			background-color: green;
 			border-bottom: 3px solid white;
@@ -34,18 +34,18 @@
 			padding-left: 90px;
 			font-size: 26px;
 		}
-		
+
 		body::before {
 			content: "";
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 21%; 
+			width: 21%;
 			height: 100%;
-			background-color: #7D1313; 
-			z-index: -1; 
+			background-color: #7D1313;
+			z-index: -1;
 		}
-		
+
 		h1 {
 		padding-right: 45px;
 		}
@@ -71,15 +71,38 @@
             <div class="d-flex flex-column" style="margin-top: 20px;">
                 <a href="/index.html" id="btnHome" type="button" class="btn btn-primary mb-2">Home</a>
                 <a href="/preset.html" id="btnAnims" type="button" class="btn btn-primary mb-2">Preset Animations</a>
-                <a href="/other.html" type="button" class="btn btn-primary mb-2">Other</a>
+                <a href="/other.html" id="btnOther" type="button" class="btn btn-primary mb-2">Other</a>
             </div>
         </div>
         <div class="col-8">
-            <div id="content" class="text-center w-100" style="margin-top: 20px;"><img src="tree.jpg" alt="Tree Image"></div>
-
+            <div id="content" class="text-center w-100" style="margin-top: 20px;"><img src="tree2.jpg" alt="Tree Image"></div>
+            <div id="buttons" class="text-center w-100" style="margin-top: 20px;">
+                <button id="btn-rainbowd" class="btn btn-primary mr-4">RainbowDefault</button>
+                <button id="btn-rainbowc" class="btn btn-primary">RainbowCycle</button>
+            </div>
         </div>
     </div>
 </div>
+
+
+
+<script>
+    $(document).ready(function(){
+        // Select the button by its id
+        $("#btn-off").click(function(){
+        // Send a GET request to "/off"
+        $.get("/off");
+        });
+        $("#btn-rainbowd").click(function(){
+        // Send a GET request to "/rainbowd"
+        $.get("/rainbowd");
+        });
+        $("#btn-rainbowc").click(function(){
+        // Send a GET request to "/rainbowc"
+        $.get("/rainbowc");
+        });
+    });
+</script>
 
 </body>
 

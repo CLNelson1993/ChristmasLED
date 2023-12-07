@@ -50,11 +50,17 @@ public class ChristmasLEDController {
 
 
 
-    @RequestMapping("/on")
+    @RequestMapping("/rainbowd")
     @ResponseBody
-    public String on() {
+    public String rainbow() {
         rainbowInvoker.execute();
-        return "LED on";
+        return "rainbow";
+    }
+    @RequestMapping("/rainbowc")
+    @ResponseBody
+    public String rainbowCycle() {
+        rainbowCycleInvoker.execute();
+        return "rainbowCycle";
     }
     @RequestMapping("/off")
     @ResponseBody
