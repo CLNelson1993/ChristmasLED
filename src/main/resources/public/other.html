@@ -58,9 +58,6 @@
 <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0">
     <h1 class="text-left w-100" style="padding-left: 10px;">ChristmasLED</h1>
     <ul class="navbar-nav px-5">
-        <li class="nav-item text-nowrap">
-            <button id="btn-off" type ="button" class="btn btn-off">OFF</button>
-        </li>
     </ul>
 </nav>
 
@@ -88,11 +85,6 @@
 
 <script>
     $(document).ready(function(){
-        // Select the button by its id
-        $("#btn-off").click(function(){
-        // Send a GET request to "/off"
-        $.get("/off");
-        });
         $("#btn-static").click(function(){
         // Send a GET request to "/static"
         $.get("/static");
