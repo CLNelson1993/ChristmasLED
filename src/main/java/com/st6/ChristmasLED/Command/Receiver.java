@@ -68,9 +68,6 @@ public class Receiver {
         }
     }
 
-
-    //boy oh boy, these need work. ayayay.
-
     public void cmdStrobe() {
         // Toggle the value of stripOn at the beginning of the method
         stripOn = !stripOn;
