@@ -15,7 +15,7 @@ public class Receiver {
     int bVal;
     int brightVal;
     boolean stripOn = false; //on and off state for loops
-    int i = 0; //counter variable for loops
+    int i = 0;
 
     //Rainbow method
     public void cmdRainbow() {
@@ -31,7 +31,7 @@ public class Receiver {
         // Check the value of stripOn before running the animation loop
         if (stripOn) {
             System.out.println("cmdRainbow() on");
-            i = 0; // zero out counter variable
+            i = 0; 
             while (stripOn) {
                 for (int pixel = 0; pixel < ledDriver.getNumPixels(); pixel++) {
                     ledDriver.setPixelColour(pixel, colors[(i + pixel) % colors.length]);
@@ -57,7 +57,7 @@ public class Receiver {
 
         if (stripOn) {
             System.out.println("cmdRainbowCycle() on");
-            i = 0; // zero out counter variable
+            i = 0; 
             for (int pixel = 0; pixel < 256 * 5 && stripOn; pixel++) { // 5 cycles of all colors on wheel
                 for (int j = 0; j < ledDriver.getNumPixels(); j++) {
                     ledDriver.setPixelColour(j, PixelColour.wheel(((j * 256 / ledDriver.getNumPixels()) + j) & 255));
@@ -87,7 +87,7 @@ public class Receiver {
 
         if (stripOn) {
             System.out.println("this is where we'd enter a value for Red,Green,Blue (0-255).");
-            i = 0; // zero out counter variable
+            i = 0; 
 
             //adjust brightness by updating the driver
             ledDriver = new WS281x(gpioNum, brightVal, pixelNum);
@@ -129,7 +129,7 @@ public class Receiver {
         if (stripOn) {
             //change brightness by updating the driver? Seems janky.
             ledDriver = new WS281x(gpioNum, brightVal, pixelNum);
-            i = 0; // zero out counter variable
+            i = 0; 
 
             System.out.println("Executing cmdStatic() with RGB(" + rVal + ", " + gVal + ", " + bVal + ") and brightness(" + brightVal + ")");
 
@@ -168,7 +168,7 @@ public class Receiver {
 
         if (stripOn) {
             //Right now this lets the user assign 3 colors. Maybe make an array?
-            i = 0; // zero out counter variable
+            i = 0; 
 
             System.out.println("Executing cmdWipe()");
             System.out.println("");
